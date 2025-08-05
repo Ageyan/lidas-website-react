@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/lidas-website-react/static/css/main.b4819fbc.css",
+    "main.js": "/lidas-website-react/static/js/main.55f20827.js",
+    "static/js/453.79b67468.chunk.js": "/lidas-website-react/static/js/453.79b67468.chunk.js",
+    "static/media/hero-section-bg.jpg": "/lidas-website-react/static/media/hero-section-bg.70d34f86c86f3c5605d4.jpg",
+    "static/media/image-section.jpg": "/lidas-website-react/static/media/image-section.5c8dc8d8a795aa42e97d.jpg",
+    "static/media/Al Saflers.ttf": "/lidas-website-react/static/media/Al Saflers.bbf880651be521554ac8.ttf",
+    "static/media/Travel November.ttf": "/lidas-website-react/static/media/Travel November.827190fec86001f8925f.ttf",
+    "static/media/manrope-v19-latin-regular.woff2": "/lidas-website-react/static/media/manrope-v19-latin-regular.84d41d78bb782fb0f969.woff2",
+    "index.html": "/lidas-website-react/index.html",
+    "main.b4819fbc.css.map": "/lidas-website-react/static/css/main.b4819fbc.css.map",
+    "main.55f20827.js.map": "/lidas-website-react/static/js/main.55f20827.js.map",
+    "453.79b67468.chunk.js.map": "/lidas-website-react/static/js/453.79b67468.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4819fbc.css",
+    "static/js/main.55f20827.js"
+  ]
+}
