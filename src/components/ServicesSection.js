@@ -53,14 +53,14 @@ function ServicesSection({servicesRef, openModal}) {
             const scrollHeight = el.scrollHeight;
             setStyle({ maxHeight: scrollHeight + "px" });
 
-            // как только анимация закончится → overflow: visible
+            // після анімації → overflow: visible
             const timer = setTimeout(() => {
             el.style.overflow = "visible";
-            }, 800); // столько же, сколько transition
+            }, 800); // як і transition
 
             return () => clearTimeout(timer);
         } else {
-            // перед закрытием возвращаем hidden
+            // повертаємо hidden
             el.style.overflow = "hidden";
             setStyle({ maxHeight: "0px" });
         }

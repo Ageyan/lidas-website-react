@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 import before1 from "../assets/images/result-image-before1.jpg";
 import after1 from "../assets/images/result-image-after1.jpg";
@@ -16,16 +16,38 @@ import after6 from "../assets/images/result-image-after6.jpg";
 function ResultsSection({resultsRef}) {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const startX = useRef(null);
 
     // Слідкуємо за розміром вікна браузера
     useEffect(() => {
         const handleResize = () => setWindowWidth(window.innerWidth);
         window.addEventListener("resize", handleResize);
-
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    const imgPath = (filename) => `${process.env.PUBLIC_URL}/images/${filename}`;
+    const handleTouchStart = (e) => {
+    startX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e) => {
+    if (startX.current === null) return;
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX.current - endX;
+
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        // свайп влево
+        setCurrentSlide((prev) => (prev + 1) % slides.length);
+      } else {
+        // свайп вправо
+        setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+      }
+    }
+
+    startX.current = null;
+  };
+
+    // const imgPath = (filename) => `${process.env.PUBLIC_URL}/images/${filename}`;
 
     // Підбираємо зображення відповідно ширині 
     let slides = [];
@@ -61,7 +83,9 @@ function ResultsSection({resultsRef}) {
                 <div className="result-section__container">
                     <div className="result-section__content-container">
                         <h2 className="section-title result-section__title">Results</h2>
-                        <div className="slider-container">
+                        <div className="slider-container"
+                            onTouchStart={windowWidth <= 768 ? handleTouchStart : undefined}
+                            onTouchEnd={windowWidth <= 768 ? handleTouchEnd : undefined}>
                             <div className="slider-container__slider" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
                                 {slides.map((slide) => (
                                     <div key={slide.id} className="slider-container__slide">
