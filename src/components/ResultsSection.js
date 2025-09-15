@@ -36,7 +36,7 @@ function ResultsSection({resultsRef}) {
 
     if (Math.abs(diff) > 50) {
       if (diff > 0) {
-        // свайп влево
+        // свайп вліво
         setCurrentSlide((prev) => (prev + 1) % slides.length);
       } else {
         // свайп вправо
