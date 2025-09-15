@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lidas-website-react/static/css/main.583490e7.css",
+    "main.css": "/lidas-website-react/static/css/main.e72e4a7c.css",
     "main.js": "/lidas-website-react/static/js/main.c03ec92c.js",
     "static/js/453.88457b48.chunk.js": "/lidas-website-react/static/js/453.88457b48.chunk.js",
     "static/media/hero-section-bg@2x.jpg": "/lidas-website-react/static/media/hero-section-bg@2x.c144f147161f05e25d26.jpg",
@@ -59,12 +59,12 @@
     "static/media/services-image-list-16@2x.png": "/lidas-website-react/static/media/services-image-list-16@2x.216d88cd0ab4adb5614a.png",
     "static/media/services-image-list-6.png": "/lidas-website-react/static/media/services-image-list-6.b407488b5246c8aa4b4c.png",
     "index.html": "/lidas-website-react/index.html",
-    "main.583490e7.css.map": "/lidas-website-react/static/css/main.583490e7.css.map",
+    "main.e72e4a7c.css.map": "/lidas-website-react/static/css/main.e72e4a7c.css.map",
     "main.c03ec92c.js.map": "/lidas-website-react/static/js/main.c03ec92c.js.map",
     "453.88457b48.chunk.js.map": "/lidas-website-react/static/js/453.88457b48.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.583490e7.css",
+    "static/css/main.e72e4a7c.css",
     "static/js/main.c03ec92c.js"
   ]
 }
