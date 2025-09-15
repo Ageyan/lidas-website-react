@@ -1,0 +1,92 @@
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    &__slider {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    &__slide {
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__slide-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        width: 100%;
+        max-width: 1240px;
+        padding: 0 24px;
+
+        @media screen and (min-width: $bp-mobile) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__slide-item {
+        background: #fff;
+        /* border-bottom: 0.5px solid var(--color-black); */
+        border-radius: 20px 20px 40px 40px;
+        overflow: hidden;
+        text-align: center;
+
+        @media screen and (min-width: $bp-mobile) {
+            border-radius: 0 0 20px 20px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            border-radius: 0 0 40px 40px;
+        }
+    }
+
+    &__slide-item img {
+        width: 100%;
+        display: block;
+    }
+
+    &__slide-item-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+        border-radius: 0 0 40px 40px;
+        border: 1px solid var(--color-black);
+        border-top: none;
+        background-color: var(--color-light-pink);
+
+        @media screen and (min-width: $bp-mobile) {
+            height: 30px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            height: 45px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            height: 60px;
+        }
+    }
+
+    &__slide-item-label p {
+        font-size: 22px;
+
+        @media screen and (min-width: $bp-mobile) {
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 27px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 30px;
+        }
+    }
+}
+

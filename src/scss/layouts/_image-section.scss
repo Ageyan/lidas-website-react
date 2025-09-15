@@ -1,0 +1,25 @@
+.image-section {
+    background-image: url("../../assets/images/image-section.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    min-height: 260px;
+
+    @media screen and (min-width: $bp-mobile) {
+        min-height: 442px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+        min-height: 624px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        min-height: 808px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url("../../assets/images/image-section@2x.jpg");
+    }
+}

@@ -1,0 +1,193 @@
+.about-section {
+    padding: 60px 0px 30px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-mobile) {
+        padding: 70px 0px 35px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 80px 0px 40px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        padding: 100px 0px 50px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+
+        @media screen and (min-width: $bp-mobile) {
+            margin-bottom: 35px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            margin-bottom: 40px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 10px;
+        gap: 15px;
+        border: 1px solid var(--color-black);
+        border-radius: 20px;
+        max-width: 360px;
+        margin: 0 auto;
+
+        @media screen and (min-width: $bp-mobile) {
+            padding: 20px 10px;
+            max-width: 500px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            padding: 65px 25px;
+            gap: 20px;
+            align-items: center;
+            max-width: 900px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            padding: 76px 31px;
+            gap: 25px;
+            max-width: 1240px;
+        }
+    }
+
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+        gap: 10px;
+
+        @media screen and (min-width: $bp-tablet) {
+            gap: 15px;
+        }
+    }
+
+    &__h3text {
+        font-size: 30px;
+        font-family: "Travel November", sans-serif;
+        font-weight: 400;
+        line-height: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+
+        @media screen and (min-width: $bp-mobile) {
+            font-size: 40px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 60px;
+        }
+    }
+
+    &__text {
+        font-size: 20px;
+
+        // @media screen and (min-width: $bp-tablet) {
+        //     font-size: 25px;
+        // }
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 30px;
+        }
+    }
+
+    &__text--limited {
+        display: none;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: block;
+        }
+    }
+
+    &__more-details-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        & p:first-child {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__button {
+        font-family: "Monrope", sans-serif;
+        font-size: 20px;
+        line-height: 100%;
+        font-weight: 400;
+        background-color: var(--color-primary-blue);
+        color: var(--color-black);
+        padding: 10px 22px;
+        border-radius: 50px;
+        margin: 0 auto;
+        height: 40px;
+        width: 190px;
+        cursor: pointer;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:hover {
+            background-color: var(--color-secondary-pink);
+            filter: drop-shadow(0px 0px 35px var(--color-secondary-pink));
+        }
+
+        @media screen and (min-width: $bp-mobile) {
+            font-size: 25px;
+            height: 55px;
+            width: 230px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            display: none;
+        }
+    }
+
+    &__btn-icon {
+        transform: rotate(0);
+        transition: transform 0.5s ease;
+
+        &.down {
+            transform: rotateX(180deg);
+        }
+    }
+
+    &__more-details-container {
+        overflow: hidden;
+        transition: max-height 0.8s ease;
+    }
+
+
+    &__img {
+        border-radius: 10px;
+        width: auto;
+        height: auto;
+
+        @media screen and (min-width: $bp-tablet) {
+            width: 380px;
+            height: 470px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 620px;
+            height: 730px;
+        }
+    }
+}
+

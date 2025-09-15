@@ -1,0 +1,125 @@
+.tool-tip {
+    position: relative;
+    // top: 20px;
+    margin-top: 8px;
+    z-index: 3;
+    padding: 8px 8px;
+    border-radius: 20px;
+    font-size: 8px;
+    width: 136px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+
+    @media screen and (min-width: $bp-mobile) {
+        width: 178px;
+        font-size: 12px;
+        padding: 14px 12px;
+        margin-top: 12px;
+        transform: translateY(-14px);
+    }
+
+    @media screen and (min-width: $bp-large-mobile) {
+        width: 224px;
+        font-size: 14px;
+        padding: 18px 16px;
+        margin-top: 14px;
+        transform: translateY(-16px);
+    }
+
+    @media screen and (min-width: $bp-large-tablet) {
+        width: 280px;
+        font-size: 16px;
+        padding: 36px 33px;
+        margin-top: 18px;
+        transform: translateY(-18px);
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        width: 378px;
+        font-size: 20px;
+        padding: 42px 38px;
+        margin-top: 20px;
+        transform: translateY(-20px);
+    }
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+
+    &.blue {
+        background-color: var(--color-primary-blue);
+    }
+
+    &.pink {
+        background-color: var(--color-primary-pink);
+    }
+
+
+    & p:first-child {
+        margin-bottom: 5px;
+
+        @media screen and (min-width: $bp-mobile) {
+            margin-bottom: 7px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-bottom: 10px;
+        }
+    }
+
+    & p:last-child {
+        margin-bottom: 0px;
+    }
+
+    &__list {
+        list-style: inside;
+        margin-bottom: 5px;
+        font-size: 8px;
+
+        @media screen and (min-width: $bp-mobile) {
+            font-size: 10px;
+            margin-bottom: 7px;
+        }
+
+        @media screen and (min-width: $bp-large-mobile) {
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: $bp-large-tablet) {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__indent {
+        margin-left: 12px;
+
+        @media screen and (min-width: $bp-mobile) {
+            margin-left: 15px;
+        }
+
+        @media screen and (min-width: $bp-large-mobile) {
+            margin-left: 17px;
+        }
+
+        @media screen and (min-width: $bp-large-tablet) {
+            margin-left: 21px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-left: 28px;
+        }
+    }
+}
+
+
+

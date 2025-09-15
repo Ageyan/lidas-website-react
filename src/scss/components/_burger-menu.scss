@@ -1,0 +1,141 @@
+.burger-menu {
+    width: 190px;
+    height: 360px;
+    background-image: url('../../assets/images/burger-menu-bg.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 8px 16px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: -190px;
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+    border-radius: 0 0 0 20px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../../assets/images/burger-menu-bg@2x.jpg');
+    }
+
+    @media screen and (min-width: $bp-mobile) {
+        width: 240px;
+        right: -240px;
+        height: 420px;
+        padding: 10px 18px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+        background-image: url('../../assets/images/burger-menu-bg2.jpg');
+        width: 390px;
+        right: -390px;
+        height: 520px;
+        padding: 12px 20px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        display: none;
+    }
+
+    &.show-menu {
+        transform: translateX(-190px);
+
+        @media screen and (min-width: $bp-mobile) {
+            transform: translateX(-240px);
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            transform: translateX(-390px);
+        }
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 50px;
+        height: 25px;
+        cursor: pointer;
+
+        @media screen and (min-width: $bp-mobile) {
+            width: 60px;
+            height: 30px;
+        }
+    
+        @media screen and (min-width: $bp-tablet) {
+            width: 70px;
+            height: 35px;
+        }
+    }
+
+    &__btn-close {
+        width: 22px;
+        height: 22px;
+        fill: var(--color-black);
+        cursor: pointer;
+        transition: fill 0.3s;
+
+        @media screen and (min-width: $bp-mobile) {
+            width: 25px;
+            height: 25px;
+        }
+    
+        @media screen and (min-width: $bp-tablet) {
+            width: 28px;
+            height: 28px;
+        }
+
+        &:hover {
+            fill: var(--color-secondary-blue);
+        }
+    }
+
+    &__list {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    &__list li {
+        margin-bottom: 15px;
+        font-size: 18px;
+        transition: color 0.3s;
+        cursor: pointer;
+
+        @media screen and (min-width: $bp-mobile) {
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+    
+        @media screen and (min-width: $bp-tablet) {
+            margin-bottom: 25px;
+            font-size: 26px;
+            color: var(--color-primary-pink);
+        }
+    }
+
+    &__list a {
+        text-decoration: none;
+        transition: color 0.3s;
+        color: var(--color-black);
+
+        @media screen and (min-width: $bp-tablet) {
+            color: var(--color-white);
+        }
+
+        &:hover {
+            color: var(--color-secondary-blue);
+        }
+    }
+
+    &__list li:last-child {
+        margin-bottom: 0;
+    }
+
+    
+}
+

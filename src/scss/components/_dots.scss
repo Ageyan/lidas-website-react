@@ -1,0 +1,62 @@
+.dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: var(--color-secondary-blue);
+    margin: 0 auto;
+    padding: 8px 10px;
+    gap: 10px;
+
+    @media screen and (min-width: $bp-mobile) {
+        width: 200px;
+        height: 38px;
+        padding: 6px 14x;
+        gap: 25px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+        width: 240px;
+        height: 48px;
+        padding: 8px 18px;
+        gap: 45px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        width: 300px;
+        height: 60px;
+        padding: 10px 20px;
+        gap: 70px;
+    }
+
+    &__dot {
+        width: 18px;
+        height: 18px;
+        background: var(--color-white);
+        border-radius: 50%;
+        border: 1px solid var(--color-secondary-pink);
+        cursor: pointer;
+
+        @media screen and (min-width: $bp-mobile) {
+            width: 22px;
+            height: 22px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            width: 28px;
+            height: 28px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &__dot.active {
+        background: var(--color-secondary-pink);
+    }
+}
+

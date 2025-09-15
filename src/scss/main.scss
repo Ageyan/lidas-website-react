@@ -1,0 +1,24 @@
+@import './base';
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/utils';
+
+@import './components/burger-menu';
+@import './components/dots';
+@import './components/slider';
+@import './components/tool-tip';
+
+@import './layouts/about.section';
+@import './layouts/contact-section';
+@import './layouts/container';
+@import './layouts/footer';
+@import './layouts/image-section';
+@import './layouts/modal';
+@import './layouts/section';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/services-section';
+@import './layouts/pricing-section';
+@import './layouts/result-section';
+
+

@@ -1,0 +1,248 @@
+.footer {
+    padding: 16px 0px 25px;
+    background-color: var(--color-secondary-pink);
+
+    @media screen and (min-width: $bp-mobile) {
+        padding: 24px 0px 30px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 36px 0px 35px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        padding: 50px 0px 40px;
+    }
+
+    &__all-container {
+        position: relative;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 77px;
+        height: 36px;
+
+        @media screen and (min-width: $bp-mobile) {
+            width: 120px;
+            height: 58px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            width: 170px;
+            height: 80px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 306px;
+            height: 130px;
+        }
+    }
+
+    &__address-container {
+        display: none;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: block;
+        }
+    }
+
+    &__address {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding-top: 30px;
+
+        @media screen and (min-width: $bp-mobile) {
+            padding-top: 45px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            text-align: center;
+            align-items: center;
+            padding-top: 12px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            padding-top: 20px;
+        }
+    }
+
+    &__link-first {
+        margin-bottom: 25px;
+        font-size: 20px;
+        text-transform: uppercase;
+
+        @media screen and (min-width: $bp-mobile) {
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            margin-bottom: 40px;
+            font-size: 26px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-bottom: 56px;
+            font-size: 30px;
+        }
+    }
+
+    &__link-two {
+        font-size: 15px;
+        margin-bottom: 15px;
+
+        @media screen and (min-width: $bp-mobile) {
+            margin-bottom: 16px;
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            margin-bottom: 18px;
+            font-size: 26px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+    }
+
+    &__link-third {
+        font-size: 15px;
+        margin-bottom: 15px;
+
+        @media screen and (min-width: $bp-mobile) {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            margin-bottom: 26px;
+            font-size: 26px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+    }
+
+    &__instagram {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: fill 0.3s;
+
+        @media screen and (min-width: $bp-mobile) {
+            width: 45px;
+            height: 45px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            width: 50px;
+            height: 50px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    &__instagram:hover {
+        fill: var(--color-secondary-blue);
+    }
+
+    &__text {
+        font-family: "Travel November", sans-serif;
+        text-transform: capitalize;
+        font-size: 20px;
+        width: 120px;
+
+        @media screen and (min-width: $bp-mobile) {
+            font-size: 24px;
+            width: 150px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 26px;
+            width: 170px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 30px;
+            width: auto;
+        }
+    }
+
+    &__button-up {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        width: 60px;
+        height: 60px;
+        background-color: var(--color-primary-blue);
+        color: var(--color-black);
+        transition: background-color 0.3s;
+        cursor: pointer;
+        border-radius: 10px;
+        border: none;
+        padding: 0px;
+
+        @media screen and (min-width: $bp-mobile) {
+            width: 75px;
+            height: 75px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            width: 85px;
+            height: 85px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 100px;
+            height: 100px;
+        }
+
+        &:hover {
+            background-color: var(--color-secondary-blue);
+        }
+    }
+
+    &__button-icon-up {
+        height: 30px;
+        width: 50px;
+
+        @media screen and (min-width: $bp-mobile) {
+            width: 65px;
+            height: 38px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            width: 70px;
+            height: 42px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 80px;
+            height: 48px;
+        }
+    }
+    
+
+    &__address-container-mobile {
+        display: block;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: none;
+        }
+    }
+}
+
