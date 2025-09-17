@@ -176,7 +176,7 @@ function ServicesSection({servicesRef, openModal}) {
                                     <div className={`tool-tip pink ${activeTooltip === 8 ? 'show' : ''}`}>
                                         <p>An intensive treatment focused on clearing pores, reducing inflammation, and regulating oil production.</p>
                                         <ul className='tool-tip__list'>
-                                            <li>Pore-softening mask to prep <span className='tool-tip__indent'>the skin</span></li>
+                                            <li>Pore-softening mask to <span className='tool-tip__indent'>prep</span> the skin</li>
                                             <li>Manual extractions</li>
                                             <li>Calming mask</li>
                                             <li>High frequency or LED</li>

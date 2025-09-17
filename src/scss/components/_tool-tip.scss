@@ -5,33 +5,41 @@
     z-index: 3;
     padding: 8px 8px;
     border-radius: 20px;
-    font-size: 8px;
-    width: 136px;
+    font-size: 10px; //8
+    width: 146px; //136
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
     transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
 
     @media screen and (min-width: $bp-mobile) {
-        width: 178px;
-        font-size: 12px;
+        width: 196px;
+        font-size: 13px;
         padding: 14px 12px;
         margin-top: 12px;
         transform: translateY(-14px);
     }
 
     @media screen and (min-width: $bp-large-mobile) {
-        width: 224px;
-        font-size: 14px;
+        width: 254px;
+        font-size: 16px;
         padding: 18px 16px;
         margin-top: 14px;
         transform: translateY(-16px);
     }
 
+    @media screen and (min-width: $bp-tablet) {
+        width: 228px;
+        font-size: 15px;
+        padding: 16px 14px;
+        margin-top: 14px;
+        transform: translateY(-14px);
+    }
+
     @media screen and (min-width: $bp-large-tablet) {
-        width: 280px;
-        font-size: 16px;
-        padding: 36px 33px;
+        width: 284px;
+        font-size: 18px;
+        padding: 24px 20px;
         margin-top: 18px;
         transform: translateY(-18px);
     }
@@ -78,19 +86,23 @@
     &__list {
         list-style: inside;
         margin-bottom: 5px;
-        font-size: 8px;
+        font-size: 9px; //8
 
         @media screen and (min-width: $bp-mobile) {
-            font-size: 10px;
+            font-size: 12px;
             margin-bottom: 7px;
         }
 
         @media screen and (min-width: $bp-large-mobile) {
-            font-size: 12px;
+            font-size: 15px;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 14px;
         }
 
         @media screen and (min-width: $bp-large-tablet) {
-            font-size: 15px;
+            font-size: 17px;
             margin-bottom: 8px;
         }
 
@@ -101,18 +113,18 @@
     }
 
     &__indent {
-        margin-left: 12px;
+        margin-left: 13px; //12
 
         @media screen and (min-width: $bp-mobile) {
-            margin-left: 15px;
-        }
-
-        @media screen and (min-width: $bp-large-mobile) {
             margin-left: 17px;
         }
 
-        @media screen and (min-width: $bp-large-tablet) {
+        @media screen and (min-width: $bp-large-mobile) {
             margin-left: 21px;
+        }
+
+        @media screen and (min-width: $bp-large-tablet) {
+            margin-left: 25px;
         }
 
         @media screen and (min-width: $bp-desktop) {

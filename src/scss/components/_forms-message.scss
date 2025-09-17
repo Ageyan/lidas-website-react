@@ -1,0 +1,58 @@
+.error-message {
+    font-size: 12px;
+    color: rgb(109, 16, 16);
+
+    @media screen and (min-width: $bp-mobile) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        font-size: 20px;
+    }
+}
+
+.done-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 25px;
+    font-size: 14px;
+    padding-left: 7px;
+    margin: 0 auto;
+    background-color: rgb(95, 233, 95);
+    border-radius: 16px;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: opacity 1s ease, transform 1s ease;
+
+    @media screen and (min-width: $bp-mobile) {
+        width: 80px;
+        height: 30px;
+        font-size: 16px;
+        padding-left: 9px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+        width: 90px;
+        height: 32px;
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+        padding-left: 12px;
+    }
+
+    &.visible {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

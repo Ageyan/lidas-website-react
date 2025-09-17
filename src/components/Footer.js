@@ -21,10 +21,10 @@ function Footer() {
                         <address className="footer__address-container">
                             <ul className="footer__address">
                                 <li className="footer__link-first">contacs</li>
-                                <li className="footer__link-two">+19803392269</li>
-                                <li className="footer__link-third">10614 Providence Rd, Charlotte,<br/> 
-                                NC 28277 suite 13</li>
-                                <li ><PiInstagramLogoThin className="footer__instagram"/></li>
+                                <li className="footer__link-two"><a href="tel:+19803392269">+19803392269</a></li>
+                                <li className="footer__link-third"><a target="_blank" href="https://maps.app.goo.gl/9G3N9LSvL2hEYJai7">10614 Providence Rd, Charlotte,<br/> 
+                                    NC 28277 suite 13</a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><PiInstagramLogoThin className="footer__instagram"/></a></li>
                             </ul>
                         </address>
                         <p className="footer__text">refine your natural glow</p>
@@ -33,10 +33,10 @@ function Footer() {
                     <address className="footer__address-container-mobile">
                         <ul className="footer__address">
                             <li className="footer__link-first">contacs</li>
-                            <li className="footer__link-two">+19803392269</li>
-                            <li className="footer__link-third">10614 Providence Rd, Charlotte,<br/> 
-                            NC 28277 suite 13</li>
-                            <li ><PiInstagramLogoThin className="footer__instagram"/></li>
+                            <li className="footer__link-two"><a href="tel:+19803392269">+19803392269</a></li>
+                            <li className="footer__link-third"><a target="_blank" href="https://maps.app.goo.gl/9G3N9LSvL2hEYJai7">10614 Providence Rd, Charlotte,<br/> 
+                                NC 28277 suite 13</a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><PiInstagramLogoThin className="footer__instagram"/></a></li>
                         </ul>
                     </address>    
                 </div>  

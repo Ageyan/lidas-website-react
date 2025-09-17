@@ -99,25 +99,25 @@
     &__form {
         display: flex;
         flex-direction: column;
-        gap: 25px;
-        padding: 20px 20px 50px;
+        // gap: 25px;
+        padding: 20px 20px 36px;
         height: 100%;
         flex-shrink: 1;
 
         @media screen and (min-width: $bp-mobile) {
-            gap: 35px;
-            padding: 35px 25px 60px;
+            // gap: 35px;
+            padding: 35px 25px 40px;
             align-items: center;
         }
         
         @media screen and (min-width: $bp-tablet) {
-            gap: 40px;
-            padding: 45px 15px 0px;
+            // gap: 40px;
+            padding: 38px 15px 0px;
         }
     
         @media screen and (min-width: $bp-desktop) {
-            gap: 80px;
-            padding: 100px 80px 0px;
+            // gap: 80px;
+            padding: 100px 60px 0px;
         }
     }
 
@@ -125,19 +125,23 @@
         font-size: 22px;
         font-weight: 600;
         font-family: "Monrope", sans-serif;
+        margin-bottom: 10px;
 
         @media screen and (min-width: $bp-mobile) {
             font-size: 30px;
             width: 280px;
+            margin-bottom: 14px;
         }
         
         @media screen and (min-width: $bp-tablet) {
             font-size: 30px;
             width: auto;
+            margin-bottom: 20px;
         }
     
         @media screen and (min-width: $bp-desktop) {
             font-size: 40px;
+            margin-bottom: 45px;
         }
     }
 
@@ -148,41 +152,27 @@
         border-left: none;
         border-right: none;
         font-size: 14px;
+        margin: 15px 0 5px;
 
         @media screen and (min-width: $bp-mobile) {
             font-size: 18px;
             height: 38px;
             width: 350px;
+            margin: 16px 0 8px;
         }
     
         @media screen and (min-width: $bp-tablet) {
             font-size: 22px;
             height: 42px;
             width: auto;
+            margin: 18px 0 9px;
         }
     
         @media screen and (min-width: $bp-desktop) {
             height: 51px;
             border-bottom: 2px solid #757575;
             font-size: 30px;
-        }
-    }
-
-    &__form-input-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-        @media screen and (min-width: $bp-mobile) {
-            gap: 30px;
-        }
-    
-        @media screen and (min-width: $bp-tablet) {
-            gap: 40px;
-        }
-    
-        @media screen and (min-width: $bp-desktop) {
-            gap: 60px;
+            margin: 30px 0 15px;
         }
     }
 
@@ -195,7 +185,7 @@
         color: var(--color-black);
         padding: 6px 12px;
         border-radius: 100px;
-        margin: 0 auto;
+        margin: 24px auto 8px;
         height: 40px;
         width: 200px;
         cursor: pointer;
@@ -206,6 +196,7 @@
             width: 240px;
             padding: 6px 14px;
             font-size: 18px;
+            margin: 28px auto 10px;
         }
     
         @media screen and (min-width: $bp-tablet) {
@@ -213,12 +204,14 @@
             width: 290px;
             padding: 8px 16px;
             font-size: 24px;
+            margin: 30px auto 10px;
         }
     
         @media screen and (min-width: $bp-desktop) {
             height: 70px;
             width: 350px;
             font-size: 30px;
+            margin: 55px auto 18px;
         }
     }
 
