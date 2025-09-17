@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lidas-website-react/static/css/main.e72e4a7c.css",
-    "main.js": "/lidas-website-react/static/js/main.c03ec92c.js",
+    "main.css": "/lidas-website-react/static/css/main.b0e6ee7f.css",
+    "main.js": "/lidas-website-react/static/js/main.4b052c05.js",
     "static/js/453.88457b48.chunk.js": "/lidas-website-react/static/js/453.88457b48.chunk.js",
     "static/media/hero-section-bg@2x.jpg": "/lidas-website-react/static/media/hero-section-bg@2x.c144f147161f05e25d26.jpg",
     "static/media/mobile-hero-section-bg@2x.jpg": "/lidas-website-react/static/media/mobile-hero-section-bg@2x.1f0e548b1f32bbce3d60.jpg",
@@ -59,12 +59,12 @@
     "static/media/services-image-list-16@2x.png": "/lidas-website-react/static/media/services-image-list-16@2x.216d88cd0ab4adb5614a.png",
     "static/media/services-image-list-6.png": "/lidas-website-react/static/media/services-image-list-6.b407488b5246c8aa4b4c.png",
     "index.html": "/lidas-website-react/index.html",
-    "main.e72e4a7c.css.map": "/lidas-website-react/static/css/main.e72e4a7c.css.map",
-    "main.c03ec92c.js.map": "/lidas-website-react/static/js/main.c03ec92c.js.map",
+    "main.b0e6ee7f.css.map": "/lidas-website-react/static/css/main.b0e6ee7f.css.map",
+    "main.4b052c05.js.map": "/lidas-website-react/static/js/main.4b052c05.js.map",
     "453.88457b48.chunk.js.map": "/lidas-website-react/static/js/453.88457b48.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e72e4a7c.css",
-    "static/js/main.c03ec92c.js"
+    "static/css/main.b0e6ee7f.css",
+    "static/js/main.4b052c05.js"
   ]
 }
